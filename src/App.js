@@ -1,14 +1,12 @@
-import './App.css';
-import Logo from "./icons/logo.png";
 
-function App() {
+import './App.css';
+import Header from "./pages/Header/Header";
+import Nav from "./pages/Nav/Nav";
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={Logo} className="app-logo" alt='Logi'/>
-      </header>
+    <Header/>
+    <Nav/>
     </div>
   );
 }
-
-export default App;
