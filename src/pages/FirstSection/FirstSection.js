@@ -6,8 +6,12 @@ console.log(Time, Clinic);
 export default function FirstSection() {
   return (
     <div class="first-section">
+    
+      <div className="cart-title">
       <p>LET'S MAKE YOUR LIFE HAPPIER</p>
       <p>SMILING TOGETHER</p>
+      </div>
+    
       <div className="all-carts">
         <div className="first-cart">
           <img src={Car} className="car-icon" alt="Car" />
@@ -18,25 +22,32 @@ export default function FirstSection() {
 cori as quos dolores et quas mole."
           />
         </div>
-        <div class="second-cart">
+        <div className="second-cart" >
           <img src={Time} className="time-icon" alt="Time" />
-          <Cart title="About Us" />
+          <Cart title="Working hours" />
           <Cart
             text="Dignissimos ducimus qui blanditii
  sentium volta tum deleniti atque
 cori as quos dolores et quas mole."
           />
+        
         </div>
-        <div class="third-cart">
+        
+        <div className="third-cart">
           <img src={Clinic} className="clinic-icon" alt="Clinic" />
-          <Cart title="About Us" />
+          <Cart title="Location" />
           <Cart
             text="Dignissimos ducimus qui blanditii
  sentium volta tum deleniti atque
 cori as quos dolores et quas mole."
           />
         </div>
-      </div>
+        
+        </div>
+    
     </div>
+    
   );
 }
+
+
