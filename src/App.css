@@ -105,3 +105,7 @@ input:focus, textarea:focus, select:focus{
   box-sizing: content-box;
   margin-bottom: 4.3px;
 }
+
+.kls{
+  display: inline;
+}
