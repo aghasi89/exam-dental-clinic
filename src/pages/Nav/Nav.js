@@ -12,7 +12,8 @@ export default function Nav() {
         <Menu title="Contact" />
         </div>
         <div className="search-bar">
-          <input  class="search" type="text" placeholder="Search.." name="search"/></div>
+          <input  class="search" type="text" placeholder="Search.." name="search"/>
+        </div>
       </div>
     );
   }
