@@ -112,9 +112,10 @@ input:focus, textarea:focus, select:focus{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 550px;
+  height: 600px;
   color: #0066cc;
   padding-top: 30px;
+  
 } 
 .all-carts{
   padding-bottom: 30px;
@@ -166,3 +167,104 @@ input:focus, textarea:focus, select:focus{
   font-size: 15pt;
 
 }
+.second-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.service-img {
+  width: 400px;
+  height: 250px;
+  margin-left: 25px;
+}
+.info-bar {
+   display: flex;
+   flex-direction: column;
+   width: 450px;
+   justify-content: space-around;
+   height: 100px;
+   margin-right: 25px;
+   margin-top: 100px;
+}
+.info-bar-button {
+    background: #2895f0;
+    color: white;
+    width: 110px;
+    height: 17px;
+    padding: 10px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.info-bar-main-title{
+  color: #2895f0;
+  line-height: 0.0;
+}
+.info-bar-main-title h1{
+color: black;
+}
+.doc-chapter{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 65px;
+}
+.doc-chapter-rectangle{
+  width: 100px;
+  height: 30px;
+  background-color: #0060b1;
+  margin-right: 15px;
+}
+.doc-chapter-title{
+  font-size: 16pt;
+  color: #0060b1;
+  font-weight: 500;
+}
+.third-section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.doc-img {
+  width: 380px;
+  height: 300px;
+  margin-right: 35px;
+}
+.doc-info-bar {
+   display: flex;
+   flex-direction: column;
+   width: 450px;
+   justify-content: space-around;
+   height: 100px;
+   margin-left: 35px;
+}
+.info-bar-button {
+    background: #2895f0;
+    color: #FFF;
+    width: 110px;
+    height: 17px;
+    padding: 10px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+.doc-info-bar-main-title h1{
+color: #0060b1;
+}
+
+
+
