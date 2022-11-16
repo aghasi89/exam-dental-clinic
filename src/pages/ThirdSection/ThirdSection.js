@@ -18,6 +18,11 @@ export default function ThirdSection() {
                        Cum sociis natoque penatibus et magnis dis parturient montes,
                        nascetur ridiculus mus." />
           <Button title="Learn more..."/>
+          <div className="doc-chapter-price">
+       
+        <div className="doc-chapter-title-price">OUR PRICES</div>
+        <div className="doc-chapter-rectangle-price"></div>
+        </div>
        </div>
       </div>
     );

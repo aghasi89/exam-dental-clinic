@@ -295,6 +295,25 @@ color: black;
 .doc-info-bar-main-title h1{
 color: #0060b1;
 }
-
+.doc-chapter-price{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 65px;
+}
+.doc-chapter-rectangle-price{
+  width: 100px;
+  height: 30px;
+  background-color: #0060b1;
+  margin-left: 15px;
+}
+.doc-chapter-title-price{
+  font-size: 16pt;
+  color: #0060b1;
+  font-weight: 500;
+}
 
 
