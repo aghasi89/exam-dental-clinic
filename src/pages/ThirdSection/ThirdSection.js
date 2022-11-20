@@ -1,12 +1,12 @@
 import DocInfo from "../../components/DocInfo";
 import Doctor from "../../icons/doctor.jpg";
-import Button from "../../components/Button";
-
+import { Outlet, Link } from "react-router-dom";
+import DocButton from "../../components/DocButton/DocButton";
 export default function ThirdSection() {
   return (
     <div className="third-section">
       <div className="doc-info-bar-image">
-        <img src={Doctor} className="doc-img" alt="Doctor" />
+     <img src={Doctor} className="doc-img" alt="Doctor" />
       </div>
       <div className="doc-info-bar">
         <DocInfo text="Name Surname" />
@@ -20,12 +20,13 @@ export default function ThirdSection() {
                        Cum sociis natoque penatibus et magnis dis parturient montes,
                        nascetur ridiculus mus."
         />
-        <Button title="Learn more..." />
-        <div className="doc-chapter-price">
-          <div className="doc-chapter-title-price">OUR PRICES</div>
-          <div className="doc-chapter-rectangle-price"></div>
-        </div>
+          <Link to="/home" >
+            <DocButton title="Get My Profile"/>
+            </Link> 
+        
       </div>
+      <Outlet/>
     </div>
   );
 }
+

@@ -6,6 +6,11 @@ import RightArrow from "../../icons/rightArrow.png";
 export default function ForthSection() {
   return (
     <div class="forth-section">
+       <div className="doc-chapter-price">
+          <div className="doc-chapter-title-price">OUR PRICES</div>
+          <div className="doc-chapter-rectangle-price"></div>
+        </div>
+        
       <div className="price-carts">
         <img src={LeftArrow} className="left-arrow-icon" alt="LeftArrow" />
         <div className="price-first-cart">
@@ -37,6 +42,10 @@ cori as quos dolores et quas mole."
         </div>
         <img src={RightArrow} className="right-arrow-icon" alt="RightArrow" />
       </div>
+      <div className="contact-chapter">
+       <div className="contact-chapter-rectangle"></div>
+          <div className="contact-chapter-title">GET CONTACT WITH US</div>
+        </div>
     </div>
   );
 }

@@ -1,20 +1,22 @@
+import ReactDOM from "react-dom/client";
 import "./App.css";
-import Header from "./pages/Header/Header";
-import Nav from "./pages/Nav/Nav";
-import FirstSection from "./pages/FirstSection/FirstSection";
-import SecondSection from "./pages/SecondSection/SecondSection";
-import ThirdSection from "./pages/ThirdSection/ThirdSection";
-import ForthSection from "./pages/ForthSection/ForthSection";
+import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
+    
     <div className="App">
-      <Header />
-      <Nav />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
+
+    <BrowserRouter>
+     <Routes>
+     <Route path="/" element={<Home />} />
+    <Route path="home" element={<Home />} />
+     </Routes>
+    </BrowserRouter>
+
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
