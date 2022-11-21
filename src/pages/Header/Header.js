@@ -5,11 +5,11 @@ import Messege from "../../icons/messege.png";
 import Am from "../../icons/am.png";
 import Ru from "../../icons/ru.png";
 import En from "../../icons/en.png";
-
+import { Outlet, Link } from "react-router-dom";
 export default function Header() {
   return (
     <div className="header">
-      <img src={Logo} className="logo" alt="Logo" />
+    <Link to="/home">  <img src={Logo} className="logo" alt="Logo" /></Link>  
 
       <div className="header-icons-info">
         <div className="phone-div">
@@ -26,6 +26,7 @@ export default function Header() {
         <img src={Am} className="am" alt="Am" />
         <img src={En} className="en" alt="En" />
       </div>
+      <Outlet/>
     </div>
   );
 }
