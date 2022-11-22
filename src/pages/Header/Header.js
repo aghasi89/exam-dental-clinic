@@ -14,11 +14,11 @@ export default function Header() {
       <div className="header-icons-info">
         <div className="phone-div">
           <img src={Phone} className="phone-icon" alt="Phone" />
-          <span>+374 93 525253</span>
+          <span>+374 98 42-12-32</span>
         </div>
         <div className="messege-div">
           <img src={Messege} className="messege-icon" alt="Messege" />
-          <span>loremIpsum@gmail.com</span>
+          <span>sandoyan_clinics@gmail.com</span>
         </div>
       </div>
       <div className="languages-part">

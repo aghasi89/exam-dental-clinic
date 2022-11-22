@@ -20,7 +20,7 @@ export default function ThirdSection() {
                        Cum sociis natoque penatibus et magnis dis parturient montes,
                        nascetur ridiculus mus."
         />
-          <Link to="/doctor" >
+          <Link style={{textDecoration: 'none'}} to="/doctor" >
             <DocButton title="Get My Profile"/>
             </Link> 
         

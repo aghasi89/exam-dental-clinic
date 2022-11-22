@@ -18,7 +18,7 @@ export default function SecondSection() {
                        Cum sociis natoque penatibus et magnis dis parturient montes,
                        nascetur ridiculus mus."
         />
-            <Link to="/service"><Button title="Learn more..."/></Link> 
+            <Link style={{textDecoration: 'none'}} to="/service"><Button title="Learn more..."/></Link> 
         <div className="doc-chapter">
           <div className="doc-chapter-rectangle"></div>
           <div className="doc-chapter-title">GET TO KNOW</div>

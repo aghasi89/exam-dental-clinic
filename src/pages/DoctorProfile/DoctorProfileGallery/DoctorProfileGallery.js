@@ -4,7 +4,10 @@ import DocLanguages from "../../../icons/DocLanguages.png";
 import DocContacts from "../../../icons/DocContacts.png";
 import DocGallery from "../../../icons/DocGallery.png";
 import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
-import Arr from "../../../icons/arr.png";
+import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
+import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
+import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
+
 import { Outlet, Link } from "react-router-dom";
 export default function DoctorProfileLanguages() {
     return (
@@ -45,24 +48,26 @@ export default function DoctorProfileLanguages() {
   </div>
   <div className="cv-info-tab">
     <div className="cv-info-tab-container">
-    <div className="full-content-language-page">
-        <div className="degree-icon">
-        <img src={DocLanguages} className="doc-profile-icons" alt="lang-icon" /><span className="deg-line">Լեզուններ</span>
+    <div className="full-content-contact-page">
+        <div className="cont-icon">
+        <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">Իմ Գործերը</span>
         </div>
-        <div className="all-arrs-icon-language-page">
-        <div className="education">
-        <img src={Arr} className="study-arrow" alt="DocProfileImage" />
-        <span >Գերազանց տիրապետում եմ հայերեն լեզվին</span>
-        </div>
-        <div className="education-sec">
-        <img src={Arr} className="study-arrow" alt="DocProfileImage" />
-        <span >Գերազանց տիրապետում եմ ռուսերեն լեզվին</span>
-        </div>
-        <div className="education-sec">
-        <img src={Arr} className="study-arrow" alt="DocProfileImage" />
-        <span >Միջին մակարդակի (B2) տիրապետում եմ անգլերեն լեզվին</span>
-        </div>
-        </div>    
+  <div className="gallery-content">
+<div className="first-gallery-row">
+<img src={FirstTeethImg} className="teeth-images" alt="teeth-images" />
+<img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
+<img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
+
+</div>
+<div className="second-gallery-row">
+<img src={FirstTeethImg} className="teeth-images" alt="teeth-images" />
+<img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
+<img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
+
+</div>
+
+
+  </div>
         </div>
         
 

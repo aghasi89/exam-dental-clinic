@@ -28,16 +28,16 @@ export default function DoctorProfilePage() {
   <img src={DocProfileImage} className="profile-img" alt="DocProfileImage" />
   <div className="cv-menu">
   <div className="cv-menu-first-bar-icon"> <img src={DocSkills} className="doc-profile-icons" alt="skill-icons" />
-  <Link to="/doctor"><div className="line">Կրթություն</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/doctor"><div className="line">Հմտություններ</div></Link>
   </div>
   <div className="cv-menu-second-bar-icon"> <img src={DocLanguages} className="doc-profile-icons" alt="lang-icon" />
-  <Link to="/DocsLanguages"><div className="line">Լեզուններ</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/DocsLanguages"><div className="line">Լեզուններ</div></Link>
   </div>
  <div className="cv-menu-third-bar-icon"> <img src={DocContacts} className="doc-profile-icons" alt="doc-contact-icon" />
- <Link to="/DocsContacts"> <div className="line">Կապ Ինձ հետ</div></Link>
+ <Link style={{textDecoration: 'none'}} to="/DocsContacts"> <div className="line">Կապ Ինձ հետ</div></Link>
  </div>
     <div className="cv-menu-forth-bar-icon"> <img src={DocGallery} className="doc-profile-icons" alt="gallery" />
-    <Link to="/DocsGallery"> <div className="line">Իմ Գործերը</div></Link>
+    <Link style={{textDecoration: 'none'}} to="/DocsGallery"> <div className="line">Իմ Գործերը</div></Link>
   </div>
   </div>
   </div>
