@@ -762,3 +762,52 @@ margin-right: 15px;
   width: 170px;
   height: 140px;
 }
+.services-profile {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 1000px;
+}
+.services-info {
+  color: #00314A;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  border-bottom: 3px solid rgba(202, 202, 202, 0.6);
+  font-size: 30px;
+  margin-bottom: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+.img-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  float: left;
+  padding: 15px 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+}
+.preventative-img, .Restorative-img, .Comprehensive-img, .Breke-img, .Cosmetic-img{
+  background: url(icons/triangles.jpg) repeat;
+  background-size: cover;
+  width: 50%;
+  border-radius: 50%;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.services-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 70px;
+}
+.text-services {
+  color: #00314A;
+  text-align: center;
+  box-sizing: border-box;
+}
