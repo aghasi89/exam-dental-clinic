@@ -2,7 +2,7 @@ export default function FifthSection() {
   return (
     <div class="fifth-Section">
        
-        <div className="fifth-section-container">
+        <div className="fifth-section-container" id="contact">
         <div className="fifth-section-main">
       <div className="inp-bar">
       <input

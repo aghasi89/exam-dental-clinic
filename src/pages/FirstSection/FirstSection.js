@@ -5,7 +5,7 @@ import Cart from "../../components/Cart";
 console.log(Time, Clinic);
 export default function FirstSection() {
   return (
-    <div class="first-section">
+    <div class="first-section" id="about">
       <div className="cart-title">
         <p>LET'S MAKE YOUR LIFE HAPPIER</p>
         <p>SMILING TOGETHER</p>

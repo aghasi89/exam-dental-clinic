@@ -9,22 +9,21 @@ import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
 import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
 
 import { Outlet, Link } from "react-router-dom";
+
+const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
+
 export default function DoctorProfileLanguages() {
     return (
       <div className="doctor-profile">
-
-  <div className="profile-background-dark-blue">
-    <div className="profile-background-dark-blue-info">
-  <DocProfileInfo title="Հովհաննես Սանդոյան"/>
-  <DocProfileInfo specialist="Ընտանեկան Ստամատոլոգ"/>
-  <DocProfileInfo text="Բարի գալուստ «Sandoyan Dental Clinics»: 
-  Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում:
-  Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, 
-  ձգտել եմ կատարելության, ցանկացած ոլորտում:
-  Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ
-  գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:   "/>
-  </div>
-  </div>
+      <div className="profile-background-dark-blue">
+        <div className="profile-background-dark-blue-info">
+          <DocProfileInfo
+            title="Հովհաննես Սանդոյան"
+            specialist="Ընտանեկան Ստամատոլոգ"
+            text={about}
+          />
+        </div>
+      </div>
   <div className="profile-picture-background-light-blue">
     <div className="cv-full-board">
   <img src={DocProfileImage} className="profile-img" alt="DocProfileImage" />

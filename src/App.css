@@ -99,6 +99,7 @@
   align-items: center;
   width: 525px;
 }
+
 .search-bar{
   display: flex;
   flex-direction: row;
@@ -549,7 +550,7 @@ height: 20px;
     position: relative;
     background-color: #1d4965;
     width: 100%;
-    height: 350px;
+    height: 380px;
     color: #FFF;
 }
 .profile-background-dark-blue-info{
@@ -561,7 +562,7 @@ height: 20px;
     justify-content: space-between;
     width: 650px;
     align-items: flex-start;
-    height: 260px;
+    height: 250px;
 }
 .profile-picture-background-light-blue{
   display: flex;
@@ -585,7 +586,7 @@ height: 20px;
   align-items: center;
 }
  .doctor-profile div{
-  line-height: 1.5;
+  line-height: 1.8;
 } 
 
 .cv-menu{
@@ -620,17 +621,27 @@ margin-right: 15px;
 }
 .cv-info-tab{
   display: flex;
-  width: 100%;
   justify-content: flex-end;
-  height: 500px;
+
+
 }
 .cv-info-tab-container{
   padding: 40px;
   display: flex;
   flex-direction: column;
   width: 700px;
-  height: 600px;
+  height: 500px;
+  justify-content: space-between;
 }
+  .contact-container{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 300px;
+    justify-content: space-around;
+  }
+
 .full-content{
   display: flex;
   width: 400px;
@@ -638,35 +649,14 @@ margin-right: 15px;
   color: #0e3872;
   font-weight: 600;
   font-size: 14pt;
-  height: 180px;
+}
 
-}
-.full-content-language-page{
-  display: flex;
-  justify-content: center;
-  width: 400px;
-  flex-direction: column;
-  color: #0e3872;
-  font-weight: 600;
-  font-size: 14pt;
-  height: 400px;
-
-}
-.full-content-sec{
-  display: flex;
-  width: 400px;
-  flex-direction: column;
-  color: #0e3872;
-  font-weight: 600;
-  font-size: 14pt;
-  height: 400px;
-}
 .degree-icon{
   display: flex;
   align-items: center;
   flex-direction: row;
   height: 100px;
-  width: 500px;
+  width: 100%;
 
 }
 .deg{
@@ -685,26 +675,41 @@ margin-right: 15px;
   margin-right: 25px;
 }
 .all-arrs-icon{
-  height: 150px;
+
   display: flex;
   flex-direction: column;
   color: #0e3872;
   font-weight: 400;
   font-size: 12pt;
+  width: 500px;
   justify-content: space-around;
 }
-.all-arrs-icon-language-page{
-  height: 220px;
+.lang-all-arrs-icon{
   display: flex;
   flex-direction: column;
+  height: 200px;
   margin-top: 35px;
   color: #0e3872;
   font-weight: 400;
-  justify-content: space-around;
   font-size: 12pt;
+  justify-content: space-around;
 
 }
-.education, .education-sec{
+.lang-text-decore{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+.contact-text-decore{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.text-decore{
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -714,6 +719,7 @@ margin-right: 15px;
   width: 30px;
   height: 30px;
   margin-right: 25px;
+  display: flex
 }
 .cont-icon{
   display: flex;

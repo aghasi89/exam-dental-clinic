@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 import { Outlet, Link } from "react-router-dom";
 export default function SecondSection() {
   return (
-    <div className="second-section">
+    <div className="second-section" id="service">
       <div className="info-bar">
         <InfoBar title="WHAT WE DO" />
         <InfoBar text="Clinic Service" />

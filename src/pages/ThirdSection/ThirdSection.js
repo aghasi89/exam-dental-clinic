@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 import DocButton from "../../components/DocButton/DocButton";
 export default function ThirdSection() {
   return (
-    <div className="third-section">
+    <div className="third-section"  id="docPage">
       <div className="doc-info-bar-image">
      <img src={Doctor} className="doc-img" alt="Doctor" />
       </div>

@@ -13,11 +13,11 @@ export default function Home() {
     <div className="home">
       <Header />
       <Nav />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
-      <FifthSection />
+      <FirstSection id="/home#about" />
+      <SecondSection  id="/home#service" />
+      <ThirdSection id="/home#docPage" />
+      <ForthSection id="/home#clinic"/>
+      <FifthSection  id="/home#contact"/>
       <Footer/>
     </div>
   );
