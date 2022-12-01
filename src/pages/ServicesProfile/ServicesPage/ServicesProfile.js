@@ -7,7 +7,7 @@ export default function ServicesProfile() {
       <div >
         <Header/>
         <Nav/>
-        <ServicesProfilePage/>
+        <ServicesProfilePage />
         <Footer/>
       </div>
     );
