@@ -9,7 +9,7 @@ export default function ScrollButton() {
   return (
     <div className='scroll-state' >
     <img src={Scr} className="scroll-button" alt="DocProfileImage"  onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
           
         }} />
      

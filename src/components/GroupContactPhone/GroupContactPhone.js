@@ -4,7 +4,7 @@ import DocContact from "../../icons/DocContactIcon.png"
 export default function GroupContactPhone ({ title, list }) {
     return (
       <div className="full-content">
-        <div className="degree-icon">
+        <div className="cont-icons">
           <img src={DocContact} className="call-icon" alt="lang-icon" />
          
           <span className="deg-line">{title}</span>

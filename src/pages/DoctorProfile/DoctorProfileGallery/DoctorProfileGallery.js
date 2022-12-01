@@ -7,12 +7,26 @@ import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
 import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
 import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
 import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
-
+import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
+import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
+import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
 import { Outlet, Link } from "react-router-dom";
+import { useMemo } from "react";
 
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 
 export default function DoctorProfileLanguages() {
+  const images = useMemo(()=>{
+    return [ 
+      FirstTeethImg,
+      SecondTeethImg,
+      ThirdTeethImg,
+      ForthTeethImg,
+      FifthTeethImg,
+      SixthTeethImg
+  
+    ]
+  })
     return (
       <div className="doctor-profile">
       <div className="profile-background-dark-blue">
@@ -52,8 +66,13 @@ export default function DoctorProfileLanguages() {
         <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">Իմ Գործերը</span>
         </div>
   <div className="gallery-content">
-<div className="first-gallery-row">
-<img src={FirstTeethImg} className="teeth-images" alt="teeth-images" />
+    {
+      images.map((image) => {
+        return <img src={image} className="teeth-images" alt="teeth-images" />
+      }, [images])
+    }
+{/* <div className="first-gallery-row">
+
 <img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
 <img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
 
@@ -63,7 +82,7 @@ export default function DoctorProfileLanguages() {
 <img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
 <img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
 
-</div>
+</div> */}
 
 
   </div>
