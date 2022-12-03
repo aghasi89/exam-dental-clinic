@@ -11,11 +11,21 @@ import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
 import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
 import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
 import { Outlet, Link } from "react-router-dom";
-import { useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 
 export default function DoctorProfileLanguages() {
+
+  const [image, setImage] = useState([]);
+
+  useEffect(() => {
+    const image = JSON.parse(localStorage.getItem('image'));
+    if (image) {
+      setImage(image);
+    }
+  } );
+
   const images = useMemo(()=>{
     return [ 
       FirstTeethImg,
@@ -71,20 +81,6 @@ export default function DoctorProfileLanguages() {
         return <img src={image} className="teeth-images" alt="teeth-images" />
       }, [images])
     }
-{/* <div className="first-gallery-row">
-
-<img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
-<img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
-
-</div>
-<div className="second-gallery-row">
-<img src={FirstTeethImg} className="teeth-images" alt="teeth-images" />
-<img src={SecondTeethImg} className="teeth-images" alt="teeth-images" />
-<img src={ThirdTeethImg} className="teeth-images" alt="teeth-images" />
-
-</div> */}
-
-
   </div>
         </div>
         
