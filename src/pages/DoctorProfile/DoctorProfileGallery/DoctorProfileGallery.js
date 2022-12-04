@@ -4,39 +4,45 @@ import DocLanguages from "../../../icons/DocLanguages.png";
 import DocContacts from "../../../icons/DocContacts.png";
 import DocGallery from "../../../icons/DocGallery.png";
 import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
-import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
-import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
-import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
-import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
-import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
-import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
+// import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
+// import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
+// import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
+// import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
+// import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
+// import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
 import { Outlet, Link } from "react-router-dom";
-import { useState, useEffect, useMemo } from "react";
+import {useState, useEffect} from "react";
+import LocalStorageImages from "../DoctorProfileGallery/LocalStorageImages";
 
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 
 export default function DoctorProfileLanguages() {
-
-  const [image, setImage] = useState([]);
-
+  const [image, setImage] = useState([])
   useEffect(() => {
     const image = JSON.parse(localStorage.getItem('image'));
-    if (image) {
-      setImage(image);
-    }
-  } );
+   const parsedImages = JSON.parse(image);
+    console.log(parsedImages);  
+    if (image) {    
+        image.map((image) => {
+          return
+          <img src={image} className="teeth-images" alt="teeth-images" />
+        }, [image])}
 
-  const images = useMemo(()=>{
-    return [ 
-      FirstTeethImg,
-      SecondTeethImg,
-      ThirdTeethImg,
-      ForthTeethImg,
-      FifthTeethImg,
-      SixthTeethImg
+  }, [])
+  // const images = useMemo(()=>{
+  //   return [ 
+  //     FirstTeethImg,
+  //     SecondTeethImg,
+  //     ThirdTeethImg,
+  //     ForthTeethImg,
+  //     FifthTeethImg,
+  //     SixthTeethImg
   
-    ]
-  })
+  //   ]
+    
+  // },[])
+  // localStorage.setItem('image', JSON.stringify(images));
+
     return (
       <div className="doctor-profile">
       <div className="profile-background-dark-blue">
@@ -76,11 +82,9 @@ export default function DoctorProfileLanguages() {
         <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">Իմ Գործերը</span>
         </div>
   <div className="gallery-content">
-    {
-      images.map((image) => {
-        return <img src={image} className="teeth-images" alt="teeth-images" />
-      }, [images])
-    }
+
+
+    
   </div>
         </div>
         
