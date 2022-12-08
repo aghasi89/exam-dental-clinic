@@ -12,9 +12,7 @@ function* GetGalleryImages(){
         const _images = ["images/first-teeth-img.jpg",
          "images/second-teeth-img.jpg",
          "images/third-teeth-img.jpg",
-         "images/forth-teeth-image.jpg",
-         "images/fifth-teeth-image.jpg",
-         "images/sixth-teeth-image.jpg"];
+        ];
         yield localStorage.setItem("images",JSON.stringify(_images))
  
         yield put(putGalleryImages(_images))

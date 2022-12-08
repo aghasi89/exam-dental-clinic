@@ -7,15 +7,23 @@ import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
 // import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
 // import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
 // import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
-// import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
-// import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
-// import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
+ import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
+ import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
+ import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
 import { Outlet, Link } from "react-router-dom";
 import useLocalStorageImages from "../DoctorProfileGallery/LocalStorageImages";
-
+import { useMemo } from "react";
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 
 export default function DoctorProfileLanguages() {
+  const secondRowImages = useMemo(()=>{
+    return [ 
+      ForthTeethImg,
+      FifthTeethImg,
+      SixthTeethImg
+
+    ]
+  })
   const images = useLocalStorageImages();
   //console.log("images --->",images);
     return (
@@ -60,11 +68,15 @@ export default function DoctorProfileLanguages() {
       {
       images.map((backgroundImage)=>{
             return (
-              <img src={backgroundImage} className="teeth-images" alt="first-img"/>
+              <img src={backgroundImage} className="teeth-images" alt="gallery-img"/>
                           )
         })
       }
-
+      {
+      secondRowImages.map((secondRowImage) => {
+        return <img src={secondRowImage} className="teeth-images" alt="teeth-images" />
+      }, [secondRowImages])
+      }
     
   </div>
         </div>

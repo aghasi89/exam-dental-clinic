@@ -10,11 +10,12 @@ import GroupContactPhone from "../../../components/GroupContactPhone/GroupContac
 import ItemContactFacebook from "../../../components/ItemContactFacebook/ItemContactFacebook"
 import ItemContactInstagram from "../../../components/ItemContactInstagram/ItemContactInstagram"
 
+
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 const phoneNumber=["374 98 42-12-32"]
 
-
 export default function DoctorProfileContacts() {
+
     return (
       <div className="doctor-profile">
 
