@@ -1,5 +1,5 @@
 function selectImages(state) {
-    return state.images
+    return state.image
 }
    
 export {selectImages}

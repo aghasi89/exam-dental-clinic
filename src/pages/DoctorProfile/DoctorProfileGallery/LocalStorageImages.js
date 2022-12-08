@@ -1,33 +1,15 @@
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { getImagesAction } from "../../../store/actions/ImageAction";
+import { selectImages } from "../../../store/selectors/ImageSelector";
 
-import FirstTeethImg from "../../../icons/first-teeth-img.jpg"
-import SecondTeethImg from "../../../icons/second-teeth-img.jpg";
-import ThirdTeethImg from "../../../icons/third-teeth-img.jpg";
-import ForthTeethImg from "../../../icons/forth-teeth-image.jpg";
-import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
-import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
-import { useMemo } from "react";
+export default function useLocalStorageImages() {
+  const images = useSelector(selectImages);
+  console.log("images",images);
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getImagesAction());
+  }, [])
 
-export default function LocalStorageImages() {
-
-    const images = useMemo(()=>{
-      return [ 
-        FirstTeethImg,
-        SecondTeethImg,
-        ThirdTeethImg,
-        ForthTeethImg,
-        FifthTeethImg,
-        SixthTeethImg
-    
-      ]
-    },[])
-    
-    localStorage.setItem('image', JSON.stringify(images));
+  return images
 }
-
-    
-// {
-      
-//     images.map((image) => {
-//       return <img src={image} className="teeth-images" alt="teeth-images" />
-//     }, [images])
-//   }

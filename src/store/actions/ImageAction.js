@@ -1,4 +1,4 @@
-import {PUT_IMAGES} from "../types/ImageTypes"
+import {BRING_iMAGES, PUT_IMAGES} from "../types/ImageTypes"
 
 const putGalleryImages=(image)=>{
     return{
@@ -6,4 +6,9 @@ const putGalleryImages=(image)=>{
         payload:image
     }
 }
-export {putGalleryImages}
+const  getImagesAction= ()=>{
+return {
+    type:BRING_iMAGES
+}
+}
+export {putGalleryImages,getImagesAction}

@@ -11,38 +11,13 @@ import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
 // import FifthTeethImg from "../../../icons/fifth-teeth-image.jpg";
 // import SixthTeethImg from "../../../icons/sixth-teeth-image.jpg";
 import { Outlet, Link } from "react-router-dom";
-import {useState, useEffect} from "react";
-import LocalStorageImages from "../DoctorProfileGallery/LocalStorageImages";
+import useLocalStorageImages from "../DoctorProfileGallery/LocalStorageImages";
 
 const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
 
 export default function DoctorProfileLanguages() {
-  const [image, setImage] = useState([])
-  useEffect(() => {
-    const image = JSON.parse(localStorage.getItem('image'));
-   const parsedImages = JSON.parse(image);
-    console.log(parsedImages);  
-    if (image) {    
-        image.map((image) => {
-          return
-          <img src={image} className="teeth-images" alt="teeth-images" />
-        }, [image])}
-
-  }, [])
-  // const images = useMemo(()=>{
-  //   return [ 
-  //     FirstTeethImg,
-  //     SecondTeethImg,
-  //     ThirdTeethImg,
-  //     ForthTeethImg,
-  //     FifthTeethImg,
-  //     SixthTeethImg
-  
-  //   ]
-    
-  // },[])
-  // localStorage.setItem('image', JSON.stringify(images));
-
+  const images = useLocalStorageImages();
+  //console.log("images --->",images);
     return (
       <div className="doctor-profile">
       <div className="profile-background-dark-blue">
@@ -82,7 +57,13 @@ export default function DoctorProfileLanguages() {
         <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">Իմ Գործերը</span>
         </div>
   <div className="gallery-content">
-
+      {
+      images.map((backgroundImage)=>{
+            return (
+              <img src={backgroundImage} className="teeth-images" alt="first-img"/>
+                          )
+        })
+      }
 
     
   </div>
