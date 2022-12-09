@@ -1,20 +1,31 @@
+import ReactDOM from "react-dom/client";
 import "./App.css";
-import Header from "./pages/Header/Header";
-import Nav from "./pages/Nav/Nav";
-import FirstSection from "./pages/FirstSection/FirstSection";
-import SecondSection from "./pages/SecondSection/SecondSection";
-import ThirdSection from "./pages/ThirdSection/ThirdSection";
-import ForthSection from "./pages/ForthSection/ForthSection";
-
+import Home from "./pages/Home";
+import Doctor from "./pages/DoctorProfile/Doctor";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Provider} from "react-redux"
+import store from "./store/store"
+import DoctorProfileLanguages from "./pages/DoctorProfile/DoctorProfileLanguages/DocsLanguages"
+import DoctorProfileContacts from "./pages/DoctorProfile/DoctorProfileContacts/DocsContacts"
+import DoctorProfileGallery from "./pages/DoctorProfile/DoctorProfileGallery/DocsGallery"
 export default function App() {
   return (
+    
     <div className="App">
-      <Header />
-      <Nav />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <ForthSection />
+  <Provider store ={store}>
+    <BrowserRouter>
+     <Routes>
+     <Route path="/" element={<Home />} />
+    <Route path="home" element={<Home />} />
+    <Route path="doctor" element={<Doctor />} />
+    <Route path="DocsLanguages" element={<DoctorProfileLanguages />} />
+    <Route path="DocsContacts" element={<DoctorProfileContacts />} />
+    <Route path="DocsGallery" element={<DoctorProfileGallery />} />
+     </Routes>
+    </BrowserRouter>
+    </Provider>
     </div>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
