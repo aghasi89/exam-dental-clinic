@@ -7,6 +7,7 @@ import ThirdSection from "./ThirdSection/ThirdSection";
 import ForthSection from "./ForthSection/ForthSection";
 import FifthSection from "./FifthSection/FifthSection";
 import Footer from "./Footer/Footer";
+import Language from "./Language/Language";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ForthSection />
       <FifthSection />
       <Footer />
+      <Language />
     </div>
   );
 }
