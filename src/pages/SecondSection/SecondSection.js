@@ -11,7 +11,7 @@ export default function SecondSection() {
         <InfoBar paragraph="Առողջ ատամնաշար և շլացուցիչ ժպիտ ունենալը ոչ միայն գեղեցիկ տեսք է տալիս մարդկանց, այլև նրանց առողջության գլխավոր գրավականներից է։" />
         <InfoBar paragraph="Անհատական մոտեցում և հոգատար վերաբերմունք ցուցաբերելով յուրաքանչյուր այցելուի նկատմամբ, կլինիկայի անձնակազմն աջակցում է բերանի խոռոչի հետ կապված բոլոր խնդիրների լուծմանը` ապահովելով որակյալ, անվտանգ և, որ շատ կարևոր է` անցավ ստամատոլոգիական ծառայություններ։" />
         <Link style={{ textDecoration: "none" }} to="/service">
-          <Button title="Learn more..." />
+          <Button title="Learn more..."/>
         </Link>
         <div className="doc-chapter">
           <div className="doc-chapter-rectangle"></div>
@@ -23,5 +23,5 @@ export default function SecondSection() {
       </div>
       <Outlet />
     </div>
-  );
+  )
 }
