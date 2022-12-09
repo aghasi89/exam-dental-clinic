@@ -7,9 +7,9 @@ import ThirdSection from "./ThirdSection/ThirdSection";
 import ForthSection from "./ForthSection/ForthSection";
 import FifthSection from "./FifthSection/FifthSection";
 import Footer from "./Footer/Footer";
+
 export default function Home() {
   return (
-    
     <div className="home">
       <Header />
       <Nav />
@@ -18,8 +18,7 @@ export default function Home() {
       <ThirdSection />
       <ForthSection />
       <FifthSection />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
-

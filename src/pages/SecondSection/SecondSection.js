@@ -1,24 +1,18 @@
 import InfoBar from "../../components/InfoBar";
-import Service from "../../icons/service.jpg";
+import Service from "../../icons/clinic.jpg";
 import Button from "../../components/Button";
 import { Outlet, Link } from "react-router-dom";
 export default function SecondSection() {
   return (
-    <div className="second-section">
+    <div className="second-section" id="services">
       <div className="info-bar">
         <InfoBar title="WHAT WE DO" />
-        <InfoBar text="Clinic Service" />
-        <InfoBar
-          paragraph="Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim,
-                       non aliquam risus. Sed a tellus quis mi rhoncus dignissim"
-        />
-        <InfoBar
-          paragraph="Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed
-                       tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie.
-                       Cum sociis natoque penatibus et magnis dis parturient montes,
-                       nascetur ridiculus mus."
-        />
-            <Link style={{textDecoration: 'none'}} to="/service"><Button title="Learn more..."/></Link> 
+        <InfoBar text="Կլինիկայի մասին" />
+        <InfoBar paragraph="Առողջ ատամնաշար և շլացուցիչ ժպիտ ունենալը ոչ միայն գեղեցիկ տեսք է տալիս մարդկանց, այլև նրանց առողջության գլխավոր գրավականներից է։" />
+        <InfoBar paragraph="Անհատական մոտեցում և հոգատար վերաբերմունք ցուցաբերելով յուրաքանչյուր այցելուի նկատմամբ, կլինիկայի անձնակազմն աջակցում է բերանի խոռոչի հետ կապված բոլոր խնդիրների լուծմանը` ապահովելով որակյալ, անվտանգ և, որ շատ կարևոր է` անցավ ստամատոլոգիական ծառայություններ։" />
+        <Link style={{ textDecoration: "none" }} to="/service">
+          <Button title="Learn more..." />
+        </Link>
         <div className="doc-chapter">
           <div className="doc-chapter-rectangle"></div>
           <div className="doc-chapter-title">GET TO KNOW</div>
@@ -27,7 +21,7 @@ export default function SecondSection() {
       <div className="info-bar-image">
         <img src={Service} className="service-img" alt="Service" />
       </div>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 }

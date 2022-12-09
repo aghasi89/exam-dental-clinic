@@ -31,16 +31,19 @@
   width: 50px;
   height: 95px;
   margin-top: -15px;
+  cursor: pointer;
 }
 .ru{
   width: 45px;
   margin-top: -20px;
   height: 85px;
+  cursor: pointer;
 }
 .en{
     width: 45px;
     height: 100px;
     margin-top: -40px;
+    cursor: pointer;
 }
 .logo{
   width: 170px;
@@ -326,6 +329,12 @@ color: #0060b1;
   background-color: #0060b1;
   margin-left: 15px;
 }
+.item {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
 .doc-chapter-title-price{
   font-size: 16pt;
   color: #0060b1;
@@ -349,12 +358,13 @@ color: #0060b1;
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin-left: 150px;
 }
 
-.price-first-cart, .price-second-cart, .price-third-cart  {
+.price-first-cart  {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  padding: 5px;
   width: 200px;
   justify-content: space-around;
   align-items: center;
@@ -363,6 +373,13 @@ color: #0060b1;
   line-height: 2;
 }
 
+.clinic {
+  height: 300px;
+  width: 300px;
+}
+.price-carts div{
+  width: 100%;
+}
 .price-second-cart {
   margin-left: 10px;
   margin-right: 10px;  
@@ -476,12 +493,12 @@ div.relative {
   border: 3px solid #0060b1;
 } 
 
-div.absolute {
+img.absolute {
   position: absolute;
   top: 22px;
   right: 112px;
   width: 450px;
-  height: 300px;
+  height: 320px;
   border: 3px solid #dddddd;
   background-color: #dddddd;
 }
@@ -761,4 +778,10 @@ margin-right: 15px;
 .teeth-images{
   width: 170px;
   height: 140px;
+}
+
+.map {
+  translate: -40px 20px;
+  width: 400px;
+  height: 350px;
 }
