@@ -14,30 +14,28 @@ export default function FirstSection() {
       <div className="all-carts">
         <div className="first-cart">
           <img src={Car} className="car-icon" alt="Car" />
-          <Cart title="About Us" />
-          <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
-          />
+          <Cart title="Մեր մասին" />
+          <Cart text="Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։" />
         </div>
         <div className="second-cart">
           <img src={Time} className="time-icon" alt="Time" />
-          <Cart title="Working hours" />
+          <Cart title="Աշխատանքային ժամերը" />
           <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
+            text="Երկ-Շբթ` 10։00-21:00
+            Կիրակի` ոչ աշխատանքային"
           />
         </div>
 
         <div className="third-cart">
           <img src={Clinic} className="clinic-icon" alt="Clinic" />
-          <Cart title="Location" />
+          <Cart title="Ծառայություններ" />
           <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
+            text="Ծառայություններ
+            Ատամների իմպլանտացիա
+            Ատամների հետացում
+            Ատամների սպիտակեցում
+            Ատամնաքարերի հեռացում
+            Պրոթեզավորում..."
           />
         </div>
       </div>
