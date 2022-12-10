@@ -13,9 +13,10 @@ import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo"
 import { Outlet, Link } from "react-router-dom";
 import useLocalStorageImages from "../DoctorProfileGallery/LocalStorageImages";
 import { useMemo } from "react";
-const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
+import useDoc from "../../../useDoc";
 
 export default function DoctorProfileLanguages() {
+  const { doc } = useDoc();
   const secondRowImages = useMemo(()=>{
     return [ 
       ForthTeethImg,
@@ -31,9 +32,9 @@ export default function DoctorProfileLanguages() {
       <div className="profile-background-dark-blue">
         <div className="profile-background-dark-blue-info">
           <DocProfileInfo
-            title="Հովհաննես Սանդոյան"
-            specialist="Ընտանեկան Ստամատոլոգ"
-            text={about}
+            title={doc("doc-name")}
+            specialist={doc("doc-specialist")}
+            text= {doc("doc-about")} 
           />
         </div>
       </div>
@@ -42,16 +43,16 @@ export default function DoctorProfileLanguages() {
   <img src={DocProfileImage} className="profile-img" alt="DocProfileImage" />
   <div className="cv-menu">
   <div className="cv-menu-first-bar-icon"> <img src={DocSkills} className="doc-profile-icons" alt="skill-icons" />
-  <Link style={{textDecoration: 'none'}} to="/doctor"><div className="line">Կրթություն</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/doctor"><div className="line">{doc("doc-skills")}</div></Link>
   </div>
   <div className="cv-menu-second-bar-icon"> <img src={DocLanguages} className="doc-profile-icons" alt="lang-icon" />
-  <Link style={{textDecoration: 'none'}} to="/DocsLanguages"><div className="line">Լեզուններ</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/DocsLanguages"><div className="line">{doc("doc-languages")}</div></Link>
   </div>
  <div className="cv-menu-third-bar-icon"> <img src={DocContacts} className="doc-profile-icons" alt="doc-contact-icon" />
- <Link style={{textDecoration: 'none'}} to="/DocsContacts"> <div className="line">Կապ Ինձ հետ</div></Link>
+ <Link style={{textDecoration: 'none'}} to="/DocsContacts"> <div className="line">{doc("doc-contacs")}</div></Link>
  </div>
     <div className="cv-menu-forth-bar-icon"> <img src={DocGallery} className="doc-profile-icons" alt="gallery" />
-    <Link style={{textDecoration: 'none'}} to="/DocsGallery"> <div className="line">Իմ Գործերը</div></Link>
+    <Link style={{textDecoration: 'none'}} to="/DocsGallery"> <div className="line">{doc("doc-works")}</div></Link>
   </div>
   </div>
   </div>
@@ -62,7 +63,7 @@ export default function DoctorProfileLanguages() {
     <div className="cv-info-tab-container">
     <div className="full-content-contact-page">
         <div className="cont-icon">
-        <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">Իմ Գործերը</span>
+        <img src={DocGallery} className="call-icon" alt="gallery-icon" /><span className="deg-line">{doc("doc-works")}</span>
         </div>
   <div className="gallery-content">
       {
