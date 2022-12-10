@@ -4,39 +4,25 @@ import DocLanguages from "../../../icons/DocLanguages.png";
 import DocContacts from "../../../icons/DocContacts.png";
 import DocGallery from "../../../icons/DocGallery.png";
 import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo";
-import Arr from "../../../icons/arr.png";
-import degree from "../../../icons/degree.png";
+import Group from "../../../components/Group/Group";
 import { Outlet, Link } from "react-router-dom";
 
-const experinces = [
+const about = [
+  "Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:",
+];
+
+const experiences = [
+  "1997-2004թթ Երևանի Պետական Բժշկական Համալսարան:",
+  `2004-2005թթ Ինտերնատուրիա՝ կլինիկական օրդինատոր, (ընտանեկան ստոմատոլոգիայի ամփոփում):`,
+];
+
+const works = [
   "2005-2008թթ Երևանի Դովլաաթյան ստոմատոլոգիական կլինիկա:",
   `2008-2018թթ Իսրայել, քաղաք՝ Երուսաղեմի առաջատար կլինիկա՝ իմպլանտոլոգ:`,
   "2018-2020թթ Ախուրյանի «Մոր և մանկան» ծննդատուն՝ հղիների ստոմատոլոգ:",
-  "2020թ... «Sandoyan Dental Clinics»-ի հիմնադիր և աշխատող:"
+  "2020թ... «Sandoyan Dental Clinics»-ի հիմնադիր և աշխատող:",
 ];
-const Item = ({ title }) => {
-  return (
-    <div className="education">
-      <img src={Arr} className="study-arrow" alt="DocProfileImage" />
-      <span>{title}</span>
-    </div>
-  );
-};
-const Group = ({ title, list }) => {
-  return (
-    <div className="full-content-sec">
-      <div className="degree-icon">
-        <img src={degree} className="deg" alt="degree" />
-        <span className="deg-line">{title}</span>
-      </div>
-      <div className="all-arrs-icon">
-        {list.map((item) => {
-          return <Item title={item} />;
-        })}
-      </div>
-    </div>
-  );
-};
+
 export default function DoctorProfilePage() {
   return (
     <div className="doctor-profile">
@@ -45,12 +31,7 @@ export default function DoctorProfilePage() {
           <DocProfileInfo
             title="Հովհաննես Սանդոյան"
             specialist="Ընտանեկան Ստամատոլոգ"
-            text="Բարի գալուստ «Sandoyan Dental Clinics»: 
-                    Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում:
-                    Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, 
-                    ձգտել եմ կատարելության, ցանկացած ոլորտում:
-                    Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ
-                    գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"
+            text={about}
           />
         </div>
       </div>
@@ -113,14 +94,8 @@ export default function DoctorProfilePage() {
       </div>
       <div className="cv-info-tab">
         <div className="cv-info-tab-container">
-          <Group
-            title={"Կրթություն"}
-            list={[
-              "1997-2004թթ Երևանի Պետական Բժշկական Համալսարան:",
-              `2004-2005թթ Ինտերնատուրիա՝ կլինիկական օրդինատոր, (ընտանեկան ստոմատոլոգիայի ամփոփում):`,
-            ]}
-          />
-          <Group title={"Աշխատանք"} list={experinces} />
+          <Group title={"Կրթություն"} list={experiences} />
+          <Group title={"Աշխատանք"} list={works} />
         </div>
       </div>
 

@@ -3,9 +3,24 @@ import Time from "../../icons/time.png";
 import Clinic from "../../icons/clinic.png";
 import Cart from "../../components/Cart";
 console.log(Time, Clinic);
+const days=[
+  "Երկուշաբթի 10։00-21:00 ",
+  "Երեքշաբթի 10։00-21:00 ",
+  "Չորեքշաբթի 10։00-21:00 ",
+  "     Հինգշաբթի 10։00-21:00     ",
+  "     Ուրբաթ 10։00-21:00      ",
+  "Շաբաթ 10։00-21:00 ",
+  "Կիրակի ոչ աշխատանքային"
+  ]
+  const about =[
+    "Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։" 
+  ]
+  const txt=[
+    "Ատամների իմպլանտացիա, ատամների հեռացում, ատամների սպիտակեցում, ատամնաքարերի հեռացում, պրոթեզավորում..."
+  ]
 export default function FirstSection() {
   return (
-    <div class="first-section">
+    <div class="first-section" id="about">
       <div className="cart-title">
         <p>LET'S MAKE YOUR LIFE HAPPIER</p>
         <p>SMILING TOGETHER</p>
@@ -14,30 +29,22 @@ export default function FirstSection() {
       <div className="all-carts">
         <div className="first-cart">
           <img src={Car} className="car-icon" alt="Car" />
-          <Cart title="About Us" />
-          <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
-          />
+          <Cart title="Մեր մասին" />
+          <Cart text={about}/>
         </div>
         <div className="second-cart">
           <img src={Time} className="time-icon" alt="Time" />
-          <Cart title="Working hours" />
-          <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
+          <Cart title="Աշխատանքային ժամերը" />
+          <Cart text={days}
+       
           />
         </div>
 
         <div className="third-cart">
           <img src={Clinic} className="clinic-icon" alt="Clinic" />
-          <Cart title="Location" />
+          <Cart title="Ծառայություններ" />
           <Cart
-            text="Dignissimos ducimus qui blanditii
- sentium volta tum deleniti atque
-cori as quos dolores et quas mole."
+            text={txt}
           />
         </div>
       </div>

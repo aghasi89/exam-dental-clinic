@@ -1,5 +1,6 @@
 import DoctorProfileGallery from "./DoctorProfileGallery";
 import Header from "../../Header/Header"
+import ScrollButton from "../../../components/ScrollButton/ScrollButton"
 import Nav from "../../Nav/Nav"
 import Footer from "../../Footer/Footer"
 export default function DocsGallery() {
@@ -8,6 +9,7 @@ export default function DocsGallery() {
         <Header/>
         <Nav/>
         <DoctorProfileGallery/>
+        <ScrollButton/>
         <Footer/>
       </div>
     );
