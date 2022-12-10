@@ -8,7 +8,7 @@ export default function Button(props) {
         {props.title}
       </div>
       <div>
-        <button onClick={props.onPress}>{props.label}</button>;
+        <button onClick={props.onPress}>{props.label}</button>
       </div>
     </div>
   );
