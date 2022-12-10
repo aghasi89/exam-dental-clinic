@@ -1,5 +1,5 @@
 import { useContext, useMemo } from "react";
-import { LanguageContext } from "../../pages/Language";
+import LanguageContext from "../../pages/Language/LanguageContext";
 import translate from "../../translate";
 
 export default function Translate(props) {
@@ -8,5 +8,5 @@ export default function Translate(props) {
     return translate[lng];
   }, [lng]);
 
-  return <div>{t.text}</div>;
+  return <div>{t?.text}</div>;
 }

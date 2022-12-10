@@ -1,6 +1,6 @@
 import { useState } from "react";
+import Content from "../../components/Content";
 import Header from "../Header/Header";
-import Content from "./components/Content";
 // import { LanguageContext } from "../../pages/Language/LanguageContext";
 
 export default function App() {

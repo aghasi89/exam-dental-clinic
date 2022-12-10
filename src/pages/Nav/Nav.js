@@ -1,6 +1,7 @@
 import Menu from "../../components/Menu/Menu";
-
+import useT from "../../useT";
 export default function Nav() {
+  const { t } = useT();
   return (
     <div className="nav">
       <div className="menu-bar">
@@ -8,7 +9,7 @@ export default function Nav() {
           href="/home#about"
           style={{ textDecoration: "none", color: "#FFF", background: "none" }}
         >
-          <Menu title="About Us" />
+          <Menu title={t("about_us")} />
         </a>
         <a
           href="/home#service"
@@ -37,7 +38,7 @@ export default function Nav() {
       </div>
       <div className="search-bar">
         <input
-          class="search"
+          className="search"
           type="text"
           placeholder="Search.."
           name="search"
