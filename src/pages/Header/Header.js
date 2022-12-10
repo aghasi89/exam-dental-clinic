@@ -1,17 +1,19 @@
 import Logo from "../../icons/logo.png";
 import Phone from "../../icons/phone.png";
 import Messege from "../../icons/messege.png";
-import Language from "../Language/Language";
 import Am from "../../icons/am.png";
 import Ru from "../../icons/ru.png";
 import En from "../../icons/en.png";
-import Button from "../../components/Button/index";
 import { Outlet, Link } from "react-router-dom";
+import useT from "../../useT";
 export default function Header(props) {
+  const { changeLanguage, language } = useT();
+
+  console.log(language);
+
   return (
     <div className="header">
       <Link to="/home">
-        {" "}
         <img src={Logo} className="logo" alt="Logo" />
       </Link>
 
@@ -31,9 +33,7 @@ export default function Header(props) {
           className="ru"
           alt="Ru"
           onClick={() => {
-            props.onChangeLanguage("ru");
-            <Language />;
-            <Button />;
+            changeLanguage("ru");
           }}
           label="ru"
         />
@@ -42,9 +42,7 @@ export default function Header(props) {
           className="am"
           alt="Am"
           onClick={(evt) => {
-            props.onChangeLanguage("am");
-            <Language />;
-            <Button />;
+            changeLanguage("hy");
           }}
           label="am"
         />
@@ -53,9 +51,7 @@ export default function Header(props) {
           className="en"
           alt="En"
           onClick={(evt) => {
-            props.onChangeLanguage("en");
-            <Language />;
-            <Button />;
+            changeLanguage("en");
           }}
           label="en"
         />
