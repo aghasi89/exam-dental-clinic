@@ -1,4 +1,4 @@
-// import { createContext } from "react";
+import { createContext } from "react";
 
-// const LanguageContext = createContext();
-// export default LanguageContext;
+const LanguageContext = createContext();
+export default LanguageContext;

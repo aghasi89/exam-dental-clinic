@@ -1,14 +1,47 @@
 {
   "ru": {
     "into_text": "Здесь вы можете увидеть наши работы, прочитать о нас, ознакомиться с прейскурантом стоматологических услуг, а также просмотреть клинику и проконсультироваться с врачом онлайн."
-    ,"about_us":"O nas"
-  },
+    ,"about_us":"O нас",
+    "servise":"Услуги",
+    "doctor":"Доктор",
+    "clinic":"Клиника",
+    "contact":"Контакт",
+    "second-section":"ЧТО МЫ ДЕЛАЕМ",
+    "second":"О клинике",
+    "text":"«Здоровые зубы и ослепительная улыбка не только украшают людей, но и являются одним из главных ключей к их здоровью».",
+    "about":"",
+   "days":""
+   ,"work_time":""
+   ,"txt":""
+   },
   "hy": {
     "into_text": "Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։"
-    ,"about_us":"Mer masin"
+    ,"about_us":"Մեր մասին",
+    "servise":"Ծառայություններ",
+    "doctor":"Բժիշկ",
+    "clinic":"Կլինիկա",
+    "contact":"Կապ",
+    "second-section":"ԻՆՉ ՄԵՆՔ ԵՆՔ ԱՆՈՒՄ",
+    "second":"Կլինիկայի մասին",
+    "text":"Առողջ ատամնաշար և շլացուցիչ ժպիտ ունենալը ոչ միայն գեղեցիկ տեսք է տալիս մարդկանց, այլև նրանց առողջության գլխավոր գրավականներից է։"
+    ,"about":  "Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։"
+    ,"days":  "Երկուշաբթի 10։00-21:00 Երեքշաբթի 10։00-21:00 Չորեքշաբթի 10։00-21:00 Հինգշաբթի 10։00-21:00  Ուրբաթ 10։00-21:00 Շաբաթ 10։00-21:00 Կիրակի ոչ աշխատանքային"
+    ,"work_time":"Աշխատանքային ժամերը",
+    "txt":"Ատամների իմպլանտացիա, ատամների հեռացում, ատամների սպիտակեցում, ատամնաքարերի հեռացում, պրոթեզավորում..."
   },
   "en": {
     "into_text": "Here you can see our works, read about us, get acquainted with the price list of stomatological services, as well as view the clinic and consult a doctor online."
-    ,"about_us":"About Us"
+    ,"about_us":"About Us",
+    "servise":"Services",
+    "doctor":"Doctor",
+    "clinic":"Clinic",
+    "contact":"Contact",
+    "second-section":"WHAT WE DO",
+    "second":"About the clinic",
+    "text":"Having healthy teeth and a dazzling smile not only makes people look good, but is also one of the main keys to their health."
+   ,"about":"",
+   "days":""
+   ,"work_time":""
+   ,"txt":""
   }
 }

@@ -503,11 +503,11 @@ input:focus, textarea:focus, select:focus{
   align-items: center;
 }
 div.relative {
-  position: relative;
   width: 400px;
   background: #0060b1;
   height: 350px;
   border: 3px solid #0060b1;
+  translate: -30px 23px;
 } 
 
 img.absolute {
@@ -811,7 +811,7 @@ margin-right: 15px;
 }
 
 .map {
-  translate: -235px 23px;
+  translate: -180px 23px;
   width: 410px;
   height: 300px;
 }
