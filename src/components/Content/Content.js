@@ -1,6 +1,7 @@
-// import { useContext, useMemo } from "react";
-// import { LanguageContext } from "../../pages/Language";
-// import translate from "../../translate";
+
+import { useContext, useMemo } from "react";
+import LanguageContext from "../../pages/Language/LanguageContext";
+import translate from "../../translate";
 
 // export default function Translate(props) {
 //   const lng = useContext(LanguageContext);
@@ -8,5 +9,6 @@
 //     return translate[lng];
 //   }, [lng]);
 
-//   return <div>{t.text}</div>;
-// }
+
+  return <div>{t?.text}</div>;
+}

@@ -1,0 +1,76 @@
+{
+  "ru": {
+    "into_text": "Здесь вы можете увидеть наши работы, прочитать о нас, ознакомиться с прейскурантом стоматологических услуг, а также просмотреть клинику и проконсультироваться с врачом онлайн."
+    ,"about_us":"O нас",
+    "servise":"Услуги",
+    "doctor":"Доктор",
+    "clinic":"Клиника",
+    "contact":"Контакт",
+    "second-section":"ЧТО МЫ ДЕЛАЕМ",
+    "second":"О клинике",
+    "text":"«Здоровые зубы и ослепительная улыбка не только украшают людей, но и являются одним из главных ключей к их здоровью».",
+    "about":"",
+   "days":""
+   ,"work_time":""
+   ,"txt":""
+    ,"doc-about": "Добро пожаловать в `Сандоян Стоматологическая Клиника`. Меня зовут Оганес Сандоян, у которого более 17 лет опыта работы в этой сфере. Я вырос в семье врача и, постоянно стремясь к профессиональному росту, стремился к совершенству в любой области. За годы работы, благодаря практической работе, а также обмену знаниями с высококлассными и опытными стоматологами, я научился обеспечивать наилучший результат даже в сложных ситуациях."
+    ,"doc-specialist":"Семейный стоматолог:"
+    ,"doc-name":"Оганес Сандоян"
+    ,"doc-skills":"Навыки"
+    ,"doc-languages":"Языки"
+    ,"doc-contacs":"Контакты"
+    ,"doc-works":"Работы"
+    ,"doc-expert":"Образование"
+    ,"doc-work":"Работа"
+   },
+  "hy": {
+    "into_text": "Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։"
+    ,"about_us":"Մեր մասին",
+    "servise":"Ծառայություններ",
+    "doctor":"Բժիշկ",
+    "clinic":"Կլինիկա",
+    "contact":"Կապ",
+    "second-section":"ԻՆՉ ՄԵՆՔ ԵՆՔ ԱՆՈՒՄ",
+    "second":"Կլինիկայի մասին",
+    "text":"Առողջ ատամնաշար և շլացուցիչ ժպիտ ունենալը ոչ միայն գեղեցիկ տեսք է տալիս մարդկանց, այլև նրանց առողջության գլխավոր գրավականներից է։"
+    ,"about":  "Այստեղ կարող եք տեսնել մեր աշխատանքները, կարդալ մեր մասին, ծանոթանալ ստամատոլոգիական ծառայությունների գնացուցակին, ինչպես նաև դիտել կլինիկան և առցանց դիմել բժշկին։"
+    ,"days":  "Երկուշաբթի 10։00-21:00 Երեքշաբթի 10։00-21:00 Չորեքշաբթի 10։00-21:00 Հինգշաբթի 10։00-21:00  Ուրբաթ 10։00-21:00 Շաբաթ 10։00-21:00 Կիրակի ոչ աշխատանքային"
+    ,"work_time":"Աշխատանքային ժամերը",
+    "txt":"Ատամների իմպլանտացիա, ատամների հեռացում, ատամների սպիտակեցում, ատամնաքարերի հեռացում, պրոթեզավորում..."
+     ,"doc-about": "Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"
+    ,"doc-specialist":"Ընտանեկան Ստամատոլոգ"
+    ,"doc-name":"Հովհաննես Սանդոյան"
+    ,"doc-skills":"Հմտություններ"
+    ,"doc-languages":"Լեզուններ"
+    ,"doc-contacs":"Կապ Ինձ հետ"
+    ,"doc-works":"Իմ Գործերը"
+    ,"doc-expert":"Կրթություն"
+    ,"doc-work":"Աշխատանք"
+  },
+  "en": {
+    "into_text": "Here you can see our works, read about us, get acquainted with the price list of stomatological services, as well as view the clinic and consult a doctor online."
+    ,"about_us":"About Us",
+    "servise":"Services",
+    "doctor":"Doctor",
+    "clinic":"Clinic",
+    "contact":"Contact",
+    "second-section":"WHAT WE DO",
+    "second":"About the clinic",
+    "text":"Having healthy teeth and a dazzling smile not only makes people look good, but is also one of the main keys to their health."
+   ,"about":"",
+   "days":""
+   ,"work_time":""
+   ,"txt":""
+    ,"doc-about": "Welcome to 'Sandoyan Dental Clinics'. I am Hovhannes Sandoyan, who has more than 17 years of experience in this field. I grew up in the family of a doctor, and constantly striving for professional advancement, I strived for perfection in any field. Over the years, thanks to the practical work, as well as the exchange of knowledge with high-class and experienced stomatologists, I have learned to ensure the best result, even in difficult situations."
+    ,"doc-specialist":"Family Dentist"
+    ,"doc-name":"Hovhannes Sandoyan"
+    ,"doc-skills":"Skills"
+    ,"doc-languages":"Languages"
+    ,"doc-contacs":"Contacts"
+    ,"doc-works":"Works"
+    ,"doc-expert":"Education"
+    ,"doc-work":"Job"
+  }
+
+
+}

@@ -18,7 +18,7 @@ export default function ForthSection() {
   }));
 
   return (
-    <div class="forth-section" id="clinic">
+    <div className="forth-section" id="clinic">
       <div className="doc-chapter-price">
         <div className="doc-chapter-title-price">OUR PRICES</div>
         <div className="doc-chapter-rectangle-price"></div>

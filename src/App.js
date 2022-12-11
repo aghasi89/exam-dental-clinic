@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom/client";
 import "./App.css";
 import Home from "./pages/Home";
 import Service from "./pages/ServicesProfile/Service"
@@ -17,10 +16,17 @@ import ServicesCosmetic from "./pages/ServicesProfile/ServicesProfileCosmetic/Se
 
 
 
+import LanguageContext from "./pages/Language/LanguageContext";
+import { useState } from "react";
+
+
 export default function App() {
+  const [language, setLanguage] = useState("hy");
+
   return (
     <div className="App">
       <Provider store={store}>
+<
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -51,9 +57,28 @@ export default function App() {
             <Route path="service-cosmetic" element={<ServicesCosmetic />} />
           </Routes>
         </BrowserRouter>
+        <LanguageContext.Provider
+          value={{ language, changeLanguage: setLanguage }}
+        >
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="home" element={<Home />} />
+              <Route path="doctor" element={<Doctor />} />
+              <Route
+                path="DocsLanguages"
+                element={<DoctorProfileLanguages />}
+              />
+              <Route path="DocsContacts" element={<DoctorProfileContacts />} />
+              <Route path="DocsGallery" element={<DoctorProfileGallery />} />
+            </Routes>
+          </BrowserRouter>
+        </LanguageContext.Provider>
+
       </Provider>
     </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+=======

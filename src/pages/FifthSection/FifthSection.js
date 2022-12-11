@@ -1,40 +1,40 @@
 import Map from "../../icons/cart.jpg";
 export default function FifthSection() {
   return (
-    <div class="fifth-Section">
+    <div className="fifth-Section">
       <div className="fifth-section-container" id="contact">
         <div className="fifth-section-main">
           <div className="inp-bar">
             <input
-              class="inp-name"
+              className="inp-name"
               type="text"
               id="name"
               placeholder="Name"
               name="name"
             />
             <input
-              class="inp-mail"
+              className="inp-mail"
               type="text"
               id="mail"
               placeholder="E-mail"
               name="mail"
             />
             <input
-              class="inp-phone"
+              className="inp-phone"
               type="text"
               id="phone"
               placeholder="Phone"
               name="phone"
             />
             <input
-              class="inp-subject"
+              className="inp-subject"
               type="text"
               id="subject"
               placeholder="Subject"
               name="subject"
             />
             <input
-              class="inp-messege"
+              className="inp-messege"
               type="text"
               id="messege"
               placeholder="Messege"
@@ -46,7 +46,7 @@ export default function FifthSection() {
           </div>
         </div>
         <div className="mapping">
-          <div class="relative">
+          <div className="relative">
             <img src={Map} className="map" />
           </div>
         </div>
