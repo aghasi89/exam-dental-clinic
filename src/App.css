@@ -906,7 +906,7 @@ margin-right: 15px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  height: 600px;
+  height: 400px;
 }
 
 .service-info {
@@ -918,18 +918,47 @@ margin-right: 15px;
   box-sizing: border-box;
 }
 
+.service-info table{
+border: solid 2px #0060b1;
+}
+
 .service-info .service-info-title{
   border: solid 2px #0060b1;
 }
 
-.service-info .service-info-title p{
-  font-size: 25px;
+.service-info .service-info-title th{
+  border: solid 2px #0060b1;
 }
 
 .service-info .service-info-list {
   border: solid 2px #0060b1;
 }
 
-.service-info .service-info-list span{
+.service-info .service-info-list td{
   font-size: 20px;
+}
+
+.Service-imag-carusel {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carusel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.image {
+  height: 300px;
+  width: 600px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
 }

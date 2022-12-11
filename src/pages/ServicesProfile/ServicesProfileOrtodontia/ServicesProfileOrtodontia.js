@@ -2,28 +2,14 @@ import React from "react";
 
 const serviceInfiList = [
   {
-    title: "Ատամների հեռացում",
+    title: "Շարժական կոնստրուկցիաներ",
   },
   {
-    title: "Ատամների կոնսերվատիվ-վիրաբուժական բուժում",
+    title: "Անշարժ կոնստրուկցիաներ",
   },
   {
-    title: "Թարախակույտերի բացազատում",
-  },
-  {
-    title: "Ալվեոլիտների և պերիկորոնարիտների բուժում",
-  },
-  {
-    title: "Ծնոտի կիստաների հեռացում",
-  },
-  {
-    title: "Բերանի խոռոչի սանձիկների հատում",
-  },
-  {
-    title: "Բերանի խոռոչի բարորակ նորագոյացությունների հեռացում",
-  },
-  {
-    title: "Ատամների իմպլանտացիա",
+    title: "Շինավորում (Բրեկետ համակարգ)",
+    list: "Էսթետիկ և մետաղական",
   },
 ];
 
@@ -33,12 +19,18 @@ export default function ServicesProfileOrtodontia() {
       {Object.keys(serviceInfiList).map((key) => {
         return (
           <div className="service-info">
-            <div className="service-info-title">
-              <p>{serviceInfiList[key].title}</p>
-            </div>
+            <table>
+              <tr className="service-info-title">
+                <td>{serviceInfiList[key].title}</td>
+              </tr>
+              <tr className="service-info-list">
+                <td>{serviceInfiList[key].list}</td>
+              </tr>
+            </table>
           </div>
         );
       })}
     </div>
   );
 }
+

@@ -29,12 +29,14 @@ export default function ServicesProfileRestorative() {
       {Object.keys(serviceInfiList).map((key) => {
         return (
           <div className="service-info">
-            <div className="service-info-title">
-              <p>{serviceInfiList[key].title}</p>
-            </div>
-            <div className="service-info-list">
-              <span>{serviceInfiList[key].list}</span>
-            </div>
+            <table>
+              <tr className="service-info-title">
+                <th>{serviceInfiList[key].title}</th>
+              </tr>
+              <tr className="service-info-list">
+                <td>{serviceInfiList[key].list}</td>
+              </tr>
+            </table>
           </div>
         );
       })}

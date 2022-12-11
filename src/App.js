@@ -30,19 +30,24 @@ export default function App() {
             <Route path="DocsLanguages" element={<DoctorProfileLanguages />} />
             <Route path="DocsContacts" element={<DoctorProfileContacts />} />
             <Route path="DocsGallery" element={<DoctorProfileGallery />} />
+
             <Route
               path="/service-preventative"
               element={<ServicesPreventative />}
             />
+
             <Route
               path="service-restorative"
               element={<ServicesRestorative />}
             />
+
             <Route
               path="service-comprehensive"
               element={<ServicesComprehensive />}
             />
+
             <Route path="service-ortodontia" element={<ServicesOrtodontia />} />
+
             <Route path="service-cosmetic" element={<ServicesCosmetic />} />
           </Routes>
         </BrowserRouter>
