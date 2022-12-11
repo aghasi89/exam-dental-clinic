@@ -39,20 +39,22 @@ export default function SecondSection() {
           <Button title="Learn more..." />
         </Link>
 
+
         <div className="doc-chapter">
           <div className="doc-chapter-rectangle"></div>
           <div className="doc-chapter-title">GET TO KNOW</div>
         </div>
       </div>
-      <div className="info-bar-image">
 
+
+      <div className="info-bar-image">
         <img 
          src={Service} 
          className="service-img" 
          alt="Service" 
          />
-         
       </div>
+
       <Outlet />
     </div>
   );
