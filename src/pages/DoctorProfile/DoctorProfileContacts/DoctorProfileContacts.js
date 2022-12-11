@@ -10,21 +10,21 @@ import GroupContactPhone from "../../../components/GroupContactPhone/GroupContac
 import ItemContactFacebook from "../../../components/ItemContactFacebook/ItemContactFacebook"
 import ItemContactInstagram from "../../../components/ItemContactInstagram/ItemContactInstagram"
 
+import useDoc from "../../../useDoc";
 
-const about=["Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:"]
-const phoneNumber=["374 98 42-12-32"]
+const phoneNumber=["+ 374 98 42-12-32"]
 
 export default function DoctorProfileContacts() {
-
+  const { doc } = useDoc();
     return (
       <div className="doctor-profile">
 
 <div className="profile-background-dark-blue">
         <div className="profile-background-dark-blue-info">
           <DocProfileInfo
-            title="Հովհաննես Սանդոյան"
-            specialist="Ընտանեկան Ստամատոլոգ"
-            text={about}
+               title={doc("doc-name")}
+               specialist={doc("doc-specialist")}
+               text= {doc("doc-about")} 
           />
         </div>
       </div>
@@ -33,16 +33,16 @@ export default function DoctorProfileContacts() {
   <img src={DocProfileImage} className="profile-img" alt="DocProfileImage" />
   <div className="cv-menu">
   <div className="cv-menu-first-bar-icon"> <img src={DocSkills} className="doc-profile-icons" alt="skill-icons" />
-  <Link style={{textDecoration: 'none'}} to="/doctor"><div className="line">Կրթություն</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/doctor"><div className="line">{doc("doc-skills")}</div></Link>
   </div>
   <div className="cv-menu-second-bar-icon"> <img src={DocLanguages} className="doc-profile-icons" alt="lang-icon" />
-  <Link style={{textDecoration: 'none'}} to="/DocsLanguages"><div className="line">Լեզուններ</div></Link>
+  <Link style={{textDecoration: 'none'}} to="/DocsLanguages"><div className="line">{doc("doc-languages")}</div></Link>
   </div>
  <div className="cv-menu-third-bar-icon"> <img src={DocContacts} className="doc-profile-icons" alt="doc-contact-icon" />
- <Link style={{textDecoration: 'none'}} to="/DocsContacts"> <div className="line">Կապ Ինձ հետ</div></Link>
+ <Link style={{textDecoration: 'none'}} to="/DocsContacts"> <div className="line">{doc("doc-contacs")}</div></Link>
  </div>
     <div className="cv-menu-forth-bar-icon"> <img src={DocGallery} className="doc-profile-icons" alt="gallery" />
-    <Link style={{textDecoration: 'none'}} to="/DocsGallery"> <div className="line">Իմ Գործերը</div></Link>
+    <Link style={{textDecoration: 'none'}} to="/DocsGallery"> <div className="line">{doc("doc-works")}</div></Link>
   </div>
   </div>
   </div>
@@ -52,7 +52,7 @@ export default function DoctorProfileContacts() {
   <div className="cv-info-tab">
         <div className="contact-container">
           <GroupContactPhone
-            title={"Կապ Ինձ հետ"}
+            title={doc("doc-contacs")}
             list={phoneNumber}
           />
           <ItemContactFacebook

@@ -6,21 +6,19 @@ import DocGallery from "../../../icons/DocGallery.png";
 import DocProfileInfo from "../../../components/DocProfileInfo/DocProfileInfo";
 import { useState, useCallback } from "react";
 import { Outlet, Link } from "react-router-dom";
-import GroupLang from "../../../components/GroupLang/GroupLang";
 
-const about = [
-  "Բարի գալուստ «Sandoyan Dental Clinics»: Ես Հովհաննես Սանդոյանն եմ՝ ով ունի ավելի քան 17 տարվա փորձ, այս ոլորտում: Մեծացել եմ բժշկի ընտանիքում և անընդհատ ականատաես լինելով՝ մասնագիտական վերելքների, ձգտել եմ կատարելության, ցանկացած ոլորտում: Տարիների ընթացքում պրակտիկ աշխատանքի, ինչպես նաև բարձրակարգ ու փորձառու ստոմատալոգիաների հետ գիտելիքի փոխանակման շնորհիվ, սովորել եմ ապահովել լավագույն արդյունք, անգամ բարդ իրավիճակներում:",
-];
+import GroupLang from "../../../components/GroupLang/GroupLang"
+import useDoc from "../../../useDoc";
 
-const langs = [
-  "Գերազանց տիրապետում եմ հայերեն լեզվին",
-  `Գերազանց տիրապետում եմ ռուսերեն լեզվին`,
-  `Միջին մակարդակի (B2) տիրապետում եմ անգլերեն լեզվին`,
-];
+const langs=["Գերազանց տիրապետում եմ հայերեն լեզվին",
+`Գերազանց տիրապետում եմ ռուսերեն լեզվին`,
+`Միջին մակարդակի (B2) տիրապետում եմ անգլերեն լեզվին`];
+
 
 const add = (fst, snd) => fst + snd;
 
 export default function DoctorProfileLanguages() {
+  const { doc } = useDoc();
   const [firstVal, setFirstVal] = useState(10);
   const increment = () => setFirstVal((num) => num + 1);
 
@@ -37,9 +35,9 @@ export default function DoctorProfileLanguages() {
       <div className="profile-background-dark-blue">
         <div className="profile-background-dark-blue-info">
           <DocProfileInfo
-            title="Հովհաննես Սանդոյան"
-            specialist="Ընտանեկան Ստամատոլոգ"
-            text={about}
+               title={doc("doc-name")}
+               specialist={doc("doc-specialist")}
+               text= {doc("doc-about")} 
           />
         </div>
       </div>
@@ -58,7 +56,7 @@ export default function DoctorProfileLanguages() {
                 alt="skill-icons"
               />
               <Link style={{ textDecoration: "none" }} to="/doctor">
-                <div className="line">Հմտություններ</div>
+                <div className="line">{doc("doc-skills")}</div>
               </Link>
             </div>
             <div className="cv-menu-second-bar-icon">
@@ -68,7 +66,7 @@ export default function DoctorProfileLanguages() {
                 alt="lang-icon"
               />
               <Link style={{ textDecoration: "none" }} to="/DocsLanguages">
-                <div className="line">Լեզուններ</div>
+                <div className="line">{doc("doc-languages")}</div>
               </Link>
             </div>
             <div className="cv-menu-third-bar-icon">
@@ -78,7 +76,7 @@ export default function DoctorProfileLanguages() {
                 alt="doc-contact-icon"
               />
               <Link style={{ textDecoration: "none" }} to="/DocsContacts">
-                <div className="line">Կապ Ինձ հետ</div>
+                <div className="line">{doc("doc-contacs")}</div>
               </Link>
             </div>
             <div className="cv-menu-forth-bar-icon">
@@ -88,7 +86,9 @@ export default function DoctorProfileLanguages() {
                 alt="gallery"
               />
               <Link style={{ textDecoration: "none" }} to="/DocsGallery">
-                <div className="line">Իմ Գործերը</div>
+
+
+                <div className="line">{doc("doc-works")}</div>
               </Link>
             </div>
           </div>
@@ -96,7 +96,11 @@ export default function DoctorProfileLanguages() {
       </div>
       <div className="cv-info-tab">
         <div className="cv-info-tab-container">
-          <GroupLang title={"Լեզուներ"} list={langs} />
+
+          <GroupLang
+            title={doc("doc-languages")}
+            list={langs}
+          />
           <div className="callback-full-bo">
             <section className="box-callback">
               <span>{firstVal}</span>
