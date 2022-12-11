@@ -5,11 +5,11 @@ import { selectImages } from "../../../store/selectors/ImageSelector";
 
 export default function useLocalStorageImages() {
   const images = useSelector(selectImages);
-  console.log("images",images);
-  const dispatch = useDispatch()
+  console.log("images", images);
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getImagesAction());
-  }, [])
+  }, []);
 
-  return images
+  return images;
 }
