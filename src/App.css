@@ -860,3 +860,109 @@ margin-right: 15px;
   padding: 2px 20px;
 }
 
+.page-service h1{
+  color: #00314A;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  border-bottom: 3px solid rgba(202, 202, 202, 0.6);
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; 
+  margin-top: 60px;
+  padding-left: 150px;
+  padding-right: 150px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.services-wrapper .service-item{
+  flex-wrap: wrap;
+  padding: 15px 10px;
+  width: 20%;
+  text-align: center;
+}
+
+.services-wrapper .service-item img{
+  background: url(/build/icons/triangles.jpg) repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 70% !important;
+}
+
+.services-wrapper .service-item a{
+  text-decoration: none;
+}
+
+.services-wrapper .service-item h2 {
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: 20px;
+  height: 100px;
+}
+
+.service-info-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  height: 400px;
+}
+
+.service-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.service-info table{
+border: solid 2px #0060b1;
+}
+
+.service-info .service-info-title{
+  border: solid 2px #0060b1;
+}
+
+.service-info .service-info-title th{
+  border: solid 2px #0060b1;
+}
+
+.service-info .service-info-list {
+  border: solid 2px #0060b1;
+}
+
+.service-info .service-info-list td{
+  font-size: 20px;
+}
+
+.Service-imag-carusel {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carusel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.image {
+  height: 300px;
+  width: 600px;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
